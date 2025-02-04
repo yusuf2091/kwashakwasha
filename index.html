@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KwashaKwasha</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+<body class="bg-gray-900 text-white">
+<!-- Hero Section -->
+<div class="relative h-screen w-full flex flex-col justify-center items-center text-center hero">
+    <!-- Background Video -->
+    <video class="absolute top-0 left-0 w-full h-full object-cover" autoplay loop muted playsinline>
+        <source src="./videos/ptz (1).mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <!-- Header -->
+    <header class="absolute top-0 left-0 w-full flex justify-between gap-10 p-5 bg-transparent z-10">
+        <h1 class="text-3xl font-bold text-white font-serif"><span class="">Kwasha</span>- <span class="">Kwasha</span></h1>
+        <button id="menu-btn" class="md:hidden text-white focus:outline-none absolute right-5 top-7 text-xl font-bold">
+            ☰
+        </button>
+        <nav class="relative z-50"> <!-- z-20 ensures the nav menu is above the hero content -->
+            <ul id="menu" class="hidden md:flex space-x-6 flex-col md:flex-row absolute md:static md:mt-1 top-16 right-5 w-auto bg-gray-800 md:bg-transparent text-center md:text-left rounded-lg md:rounded-none shadow-lg p-4 md:p-0 z-30">
+                <li><a href="#home" class="block py-2 px-4 hover:text-yellow-400 text-xl font-bold">Home</a></li>
+                <li><a href="#products" class="block py-2 px-4 hover:text-yellow-400 text-xl font-bold">Products</a></li>
+                <li><a href="#services" class="block py-2 px-4 hover:text-yellow-400 text-xl font-bold">Services</a></li>
+                <li><a href="#gallery" class="block py-2 px-4 hover:text-yellow-400 text-xl font-bold">Gallery</a></li>
+                <li><a href="#contact" class="block py-2 px-4 hover:text-yellow-400 text-xl font-bold">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Content -->
+    <div class="absolute z-10 p-5 text-white"> <!-- z-10 ensures the hero content stays behind the menu -->
+        <h2 class="text-4xl md:text-6xl font-bold mb-4 z-0">Secure Your Property with Us</h2>
+        <p class="text-3xl md:text-4xl mb-6 z-10">We provide top-quality CCTV, Satellite, and Solar Installations</p>
+        <a href="#services" class="px-6 py-3 lg:px-9 lg:py-5 md:px-7 md:py-4 bg-yellow-500 text-black font-semibold rounded-lg shadow-md hover:bg-yellow-600">Explore Services</a>
+    </div>
+</div>
+
+</div>
+<!-- Featured Products Section -->
+<section class="mt-2 px-4">
+    <h2 class="text-3xl font-bold text-center mb-5">Featured Products</h2>
+    <div class="scroll-container">
+        
+        <div class="scroll-item bg-gray-600 p-2 text-center text-white rounded-lg shadow-lg">
+            <img src="https://cdn.pixabay.com/photo/2016/04/08/18/03/rotary-camera-1316677_640.jpg" alt="PTZ Camera" class="w-full h-40 object-cover rounded-lg mb-4">
+            <h3 class="text-xl font-semibold">PTZ Camera</h3>
+            <p class="text-yellow-500 text-lg">N 113,099</p>
+            <a href="#message" class="mt-4 inline-block px-6 py-2 bg-yellow-500 text-black font-semibold rounded-lg hover:bg-yellow-600">Buy Now</a>
+        </div>
+
+        <div class="scroll-item bg-gray-600 p-2 text-center text-white rounded-lg shadow-lg">
+            <img src="https://cdn.pixabay.com/photo/2017/09/12/13/22/photovoltaic-system-2742306_640.jpg" alt="Solar Panel" class="w-full h-40 object-cover rounded-lg mb-4">
+            <h3 class="text-xl font-semibold">Solar Panel</h3>
+            <p class="text-yellow-500 text-lg">N 45,000</p>
+            <a href="#message" class="mt-4 inline-block px-6 py-2 bg-yellow-500 text-black font-semibold rounded-lg hover:bg-yellow-600">Buy Now</a>
+        </div>
+
+        <div class="scroll-item bg-gray-600 p-2 text-center text-white rounded-lg shadow-lg">
+            <img src="https://cdn.pixabay.com/photo/2016/03/18/07/20/dish-1264400_640.jpg" alt="Satellite Dish" class="w-full h-40 object-cover rounded-lg mb-4">
+            <h3 class="text-xl font-semibold">Satellite Dish</h3>
+            <p class="text-yellow-500 text-lg">N 17,500</p>
+            <a href="#message" class="mt-4 inline-block px-6 py-2 bg-yellow-500 text-black font-semibold rounded-lg hover:bg-yellow-600">Buy Now</a>
+        </div>
+
+        <div class="scroll-item bg-gray-600 p-2 text-center text-white rounded-lg shadow-lg">
+            <img src="https://cdn.pixabay.com/photo/2015/02/07/20/58/tv-627876_640.jpg" alt="LED TV" class="w-full h-40 object-cover rounded-lg mb-4">
+            <h3 class="text-xl font-semibold">LED TV</h3>
+            <p class="text-yellow-500 text-lg">N 90,000</p>
+            <a href="#message" class="mt-4 inline-block px-6 py-2 bg-yellow-500 text-black font-semibold rounded-lg hover:bg-yellow-600">Buy Now</a>
+        </div>
+
+        <div class="scroll-item bg-gray-600 p-2 text-center text-white rounded-lg shadow-lg">
+            <img src="https://cdn.pixabay.com/photo/2016/04/08/18/03/rotary-camera-1316677_640.jpg" alt="PTZ Camera" class="w-full h-40 object-cover rounded-lg mb-4">
+            <h3 class="text-xl font-semibold">PTZ Camera</h3>
+            <p class="text-yellow-500 text-lg">N 113,099</p>
+            <a href="#message" class="mt-4 inline-block px-6 py-2 bg-yellow-500 text-black font-semibold rounded-lg hover:bg-yellow-600">Buy Now</a>
+        </div>
+
+    </div>
+</section>
+
+
+
+    <!-- Category Section -->
+<section id="categories" class="py-20 bg-gray-800">
+    <h2 class="text-4xl font-bold text-center text-white mb-10">Our Categories</h2>
+    <div class="max-w-7xl mx-auto px-6 grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2">
+        
+        <!-- Category 1: Satellite Dishes -->
+        <div class="category-card bg-blue-600 text-white p-2 rounded-lg shadow-lg hover:bg-blue-500 transition duration-300">
+            <img src="https://cdn.pixabay.com/photo/2019/12/03/16/28/hummingbird-4670403_640.jpg" alt="Satellite Dish" class="w-full h-48 object-cover rounded-t-lg mb-4">
+            <h3 class="text-xl font-semibold mb-2">Satellite Dishes</h3>
+            <!-- <p class="text-lg">Find the best satellite dishes for your TV, home, or business.</p> -->
+            <a href="satellite.html" class="mt-4 inline-block px-4 py-2 bg-yellow-500 text-black font-semibold rounded-lg shadow-md hover:bg-yellow-600">Explore</a>
+        </div>
+
+        <!-- Category 2: CCTV Cameras -->
+        <div class="category-card bg-green-600 text-white p-2 rounded-lg shadow-lg hover:bg-green-500 transition duration-300">
+            <img src="https://plus.unsplash.com/premium_photo-1675016457613-2291390d1bf6?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8Y2N0diUyMGNhbWVyYXxlbnwwfHwwfHx8MA%3D%3D" alt="CCTV Camera" class="w-full h-48 object-cover rounded-t-lg mb-4">
+            <h3 class="text-xl font-semibold mb-2">CCTV Cameras</h3>
+            <!-- <p class="text-lg">Keep your property secure with high-quality CCTV cameras.</p> -->
+            <a href="cctv.html" class="mt-4 inline-block px-4 py-2 bg-yellow-500 text-black font-semibold rounded-lg shadow-md hover:bg-yellow-600">Explore</a>
+        </div>
+
+        <!-- Category 3: Solar Panels -->
+        <div class="category-card bg-yellow-600 text-white p-2 rounded-lg shadow-lg hover:bg-yellow-500 transition duration-300">
+            <img src="https://cdn.pixabay.com/photo/2016/05/15/16/08/solar-panel-1393880_640.png" alt="Solar Panels" class="w-full h-48 object-cover rounded-t-lg mb-4">
+            <h3 class="text-xl font-semibold mb-2">Solar Panels</h3>
+            <!-- <p class="text-lg">Save energy and reduce costs with our solar panel solutions.</p> -->
+            <a href="solar.html" class="mt-4 inline-block px-4 py-2 bg-black text-yellow-500 font-semibold rounded-lg shadow-md hover:bg-gray-800">Explore</a>
+        </div>
+
+        <!-- Category 4: Smart Home Devices -->
+        <div class="category-card bg-purple-600 text-white p-2 rounded-lg shadow-lg hover:bg-purple-500 transition duration-300">
+            <img src="https://media.istockphoto.com/id/1736676982/photo/wooden-wall-in-living-room-with-armchair-and-accessories-tv-room.jpg?s=612x612&w=0&k=20&c=oFRYQ2sm0Dxd4uOMXzDJstZAQpu3vF-4U1fyJAMeP3o=" alt="Smart Home Devices" class="w-full h-48 object-cover rounded-t-lg mb-4">
+            <h3 class="text-xl font-semibold mb-2">Electronics</h3>
+            <!-- <p class="text-lg">Upgrade your home with the latest in smart technology.</p> -->
+            <a href="electronics.html" class="mt-4 inline-block px-4 py-2 bg-yellow-500 text-black font-semibold rounded-lg shadow-md hover:bg-yellow-600">Explore</a>
+        </div>
+
+    </div>
+</section>
+
+<!-- Products Section -->
+<section class="p-5 mt-10 bg-gray-800" id="products">
+    <h2 class="text-3xl font-bold text-center text-white mb-5">Our Products</h2>
+    <div class="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-2">
+        <!-- Product Card 1 -->
+        <div class="bg-gray-600 p-2 text-center text-white rounded-lg shadow-lg">
+            <img src="https://cdn.pixabay.com/photo/2016/03/18/07/20/dish-1264400_640.jpg" alt="Satellite Dish" class="w-full h-40 object-cover rounded-lg mb-4">
+            <h3 class="text-xl font-semibold">Satellite Dish</h3>
+            <p class="text-yellow-500 text-lg">N 45,000</p>
+            <a href="#message" class="mt-4 inline-block px-6 py-2 bg-yellow-500 text-black font-semibold rounded-lg hover:bg-yellow-600">Shop Now</a>
+        </div>
+
+        <!-- Product Card 2 -->
+        <div class="bg-gray-600 p-2 text-center text-white rounded-lg shadow-lg">
+            <img src="https://cdn.pixabay.com/photo/2020/10/10/06/14/security-camera-5642120_640.jpg" alt="CCTV Camera" class="w-full h-40 object-cover rounded-lg mb-4">
+            <h3 class="text-xl font-semibold">CCTV Camera</h3>
+            <p class="text-yellow-500 text-lg">N 30,000</p>
+            <a href="#message" class="mt-4 inline-block px-6 py-2 bg-yellow-500 text-black font-semibold rounded-lg hover:bg-yellow-600">Shop Now</a>
+        </div>
+
+        <!-- Product Card 3 -->
+        <div class="bg-gray-600 p-2 text-center text-white rounded-lg shadow-lg">
+            <img src="https://cdn.pixabay.com/photo/2017/09/12/13/22/photovoltaic-system-2742306_640.jpg" alt="Solar Panel" class="w-full h-40 object-cover rounded-lg mb-4">
+            <h3 class="text-xl font-semibold">Solar Panel</h3>
+            <p class="text-yellow-500 text-lg">N 55,000</p>
+            <a href="#message" class="mt-4 inline-block px-6 py-2 bg-yellow-500 text-black font-semibold rounded-lg hover:bg-yellow-600">Shop Now</a>
+        </div>
+
+        <!-- Product Card 4 -->
+        <div class="bg-gray-600 p-2 text-center text-white rounded-lg shadow-lg">
+            <img src="https://cdn.pixabay.com/photo/2017/07/10/13/22/battery-2490122_640.jpg" alt="Solar Battery" class="w-full h-40 object-cover rounded-lg mb-4">
+            <h3 class="text-xl font-semibold">Solar Battery</h3>
+            <p class="text-yellow-500 text-lg">N 90,000</p>
+            <a href="#message" class="mt-4 inline-block px-6 py-2 bg-yellow-500 text-black font-semibold rounded-lg hover:bg-yellow-600">Shop Now</a>
+        </div>
+
+        <!-- Product Card 5 -->
+        <div class="bg-gray-600 p-2 text-center text-white rounded-lg shadow-lg">
+            <img src="https://images.unsplash.com/photo-1630617867674-3905ea203152?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fGFwcGxpYW5jZXxlbnwwfHwwfHx8MA%3D%3D" alt="Smart Lock" class="w-full h-40 object-cover rounded-lg mb-4">
+            <h3 class="text-xl font-semibold">Electric Heater</h3>
+            <p class="text-yellow-500 text-lg">N 20,000</p>
+            <a href="#message" class="mt-4 inline-block px-6 py-2 bg-yellow-500 text-black font-semibold rounded-lg hover:bg-yellow-600">Shop Now</a>
+        </div>
+
+<!-- See More Card -->
+<div class="bg-gray-600 p-6 text-center text-white rounded-lg shadow-lg relative">
+    <img src="https://images.unsplash.com/photo-1630617867674-3905ea203152?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fGFwcGxpYW5jZXxlbnwwfHwwfHx8MA%3D%3D" 
+         alt="See More Products" class="w-full h-40 object-cover rounded-lg blur-md">
+    <div class="absolute inset-0 bg-black bg-opacity-50 flex flex-col items-center justify-center">
+        <h3 class="text-xl font-semibold text-white">See More Products</h3>
+        <a href="all-products.html" class="mt-4 inline-block px-6 py-2 bg-yellow-500 text-black font-semibold rounded-lg hover:bg-yellow-600">View All</a>
+    </div>
+</div>
+
+    </div>
+</section>
+
+
+
+<!-- Services Section -->
+<section id="services" class="py-20 bg-gray-900">
+    <h2 class="text-4xl font-bold text-center text-white mb-10">Our Services</h2>
+    <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-8">
+        
+        <!-- Service 1: Satellite Dish Installation -->
+        <div class="service-card bg-blue-600 text-white p-6 rounded-lg shadow-lg hover:bg-blue-500 transition duration-300 text-center">
+            <i class="fa-solid fa-satellite-dish text-6xl mb-4"></i>
+            <h3 class="text-xl font-semibold mb-2">Satellite Dish Installation</h3>
+            <p class="text-lg">Get professional installation of satellite dishes for clear TV reception.</p>
+            <a href="#contact" class="mt-4 inline-block px-4 py-2 bg-yellow-500 text-black font-semibold rounded-lg shadow-md hover:bg-yellow-600">Learn More</a>
+        </div>
+
+        <!-- Service 2: CCTV Camera Setup -->
+        <div class="service-card bg-green-600 text-white p-6 rounded-lg shadow-lg hover:bg-green-500 transition duration-300 text-center">
+            <i class="fa-solid fa-video text-6xl mb-4"></i>
+            <h3 class="text-xl font-semibold mb-2">CCTV Camera Setup</h3>
+            <p class="text-lg">Ensure the safety of your home with expert CCTV camera installation and setup.</p>
+            <a href="#contact" class="mt-4 inline-block px-4 py-2 bg-yellow-500 text-black font-semibold rounded-lg shadow-md hover:bg-yellow-600">Learn More</a>
+        </div>
+
+        <!-- Service 3: Solar Panel Installation -->
+        <div class="service-card bg-yellow-600 text-white p-6 rounded-lg shadow-lg hover:bg-yellow-500 transition duration-300 text-center">
+            <i class="fa-solid fa-solar-panel text-6xl mb-4"></i>
+            <h3 class="text-xl font-semibold mb-2">Solar Panel Installation</h3>
+            <p class="text-lg">Switch to solar energy and save on your electricity bills with our professional installations.</p>
+            <a href="#contact" class="mt-4 inline-block px-4 py-2 bg-black text-yellow-500 font-semibold rounded-lg shadow-md hover:bg-gray-800">Learn More</a>
+        </div>
+
+    </div>
+</section>
+
+
+<!-- Why Choose Us Section -->
+<!-- <section id="why-choose-us" class="py-20 bg-gray-900 text-white">
+    <h2 class="text-4xl font-bold text-center mb-12">Why Choose Us</h2>
+    <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        
+        <!-- Affordable Prices 
+        <div class="feature-card bg-blue-600 p-6 rounded-lg shadow-lg hover:bg-blue-500 transition duration-300">
+            <div class="text-3xl mb-4">
+                <i class="fas fa-dollar-sign"></i>
+            </div>
+            <h3 class="text-xl font-semibold mb-2">Affordable Prices</h3>
+            <p>We offer the best prices without compromising on quality, ensuring you get great value for your money.</p>
+        </div>
+
+        <!-- Expert Installation 
+        <div class="feature-card bg-green-600 p-6 rounded-lg shadow-lg hover:bg-green-500 transition duration-300">
+            <div class="text-3xl mb-4">
+                <i class="fas fa-tools"></i>
+            </div>
+            <h3 class="text-xl font-semibold mb-2">Expert Installation</h3>
+            <p>Our team of certified experts ensures a smooth and professional installation of your systems.</p>
+        </div>
+
+        <!-- Warranty & Support
+        <div class="feature-card bg-yellow-600 p-6 rounded-lg shadow-lg hover:bg-yellow-500 transition duration-300">
+            <div class="text-3xl mb-4">
+                <i class="fas fa-shield-alt"></i>
+            </div>
+            <h3 class="text-xl font-semibold mb-2">Warranty & Support</h3>
+            <p>We provide a warranty on all installations and offer ongoing support to ensure your systems run smoothly.</p>
+        </div>
+
+        <!-- 24/7 Customer Service 
+        <div class="feature-card bg-purple-600 p-6 rounded-lg shadow-lg hover:bg-purple-500 transition duration-300">
+            <div class="text-3xl mb-4">
+                <i class="fas fa-headset"></i>
+            </div>
+            <h3 class="text-xl font-semibold mb-2">24/7 Customer Service</h3>
+            <p>Our customer service team is available around the clock to assist with any issues or queries you may have.</p>
+        </div>
+
+    </div>
+</section> -->
+
+<!-- Recent Works Section -->
+<section class="py-20 bg-gray-900 text-white" id="gallery">
+    <h2 class="text-4xl font-bold text-center mb-12">Our Recent Works</h2>
+    <div class="max-w-7xl mx-auto px-6 grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 gap-2">
+
+        <!-- Work 1 -->
+        <div class="work-card relative group">
+            <img src="https://images.pexels.com/photos/6257849/pexels-photo-6257849.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Work 1" class="w-full h-full object-cover rounded-lg shadow-lg transition-transform duration-300 ease-in-out group-hover:scale-105">
+            <div class="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition duration-300 ease-in-out flex items-center justify-center">
+                <a href="#work1" class="text-lg font-semibold text-white">View Details</a>
+            </div>
+        </div>
+
+        <!-- Work 2 -->
+        <div class="work-card relative group">
+            <img src="https://images.pexels.com/photos/5650141/pexels-photo-5650141.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Work 2" class="w-full h-full object-cover rounded-lg shadow-lg transition-transform duration-300 ease-in-out group-hover:scale-105">
+            <div class="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition duration-300 ease-in-out flex items-center justify-center">
+                <a href="#work2" class="text-lg font-semibold text-white">View Details</a>
+            </div>
+        </div>
+
+        <!-- Work 3 -->
+        <div class="work-card relative group">
+            <img src="https://images.pexels.com/photos/9875408/pexels-photo-9875408.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Work 3" class="w-full h-full object-cover rounded-lg shadow-lg transition-transform duration-300 ease-in-out group-hover:scale-105">
+            <div class="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition duration-300 ease-in-out flex items-center justify-center">
+                <a href="#work3" class="text-lg font-semibold text-white">View Details</a>
+            </div>
+        </div>
+
+        <!-- Work 4 -->
+        <div class="work-card relative group">
+            <img src="https://images.pexels.com/photos/8853499/pexels-photo-8853499.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Work 4" class="w-full h-full object-cover rounded-lg shadow-lg transition-transform duration-300 ease-in-out group-hover:scale-105">
+            <div class="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition duration-300 ease-in-out flex items-center justify-center">
+                <a href="#work4" class="text-lg font-semibold text-white">View Details</a>
+            </div>
+        </div>
+
+        <!-- Work 5 -->
+        <div class="work-card relative group">
+            <img src="https://media.istockphoto.com/id/1086188142/photo/technician-installing-satellite-dish-and-television-antenna-on-roof-top.webp?a=1&b=1&s=612x612&w=0&k=20&c=aK4aZr-ym43JHV9g9VHzOB-R4Nuq91vLVvNhVDzZTDg=" alt="Work 5" class="w-full h-full object-cover rounded-lg shadow-lg transition-transform duration-300 ease-in-out group-hover:scale-105">
+            <div class="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition duration-300 ease-in-out flex items-center justify-center">
+                <a href="#work5" class="text-lg font-semibold text-white">View Details</a>
+            </div>
+        </div>
+
+       <!-- Work 6 -->
+<div class="work-card relative group">
+    <img src="https://media.istockphoto.com/id/1086188142/photo/technician-installing-satellite-dish-and-television-antenna-on-roof-top.webp?a=1&b=1&s=612x612&w=0&k=20&c=aK4aZr-ym43JHV9g9VHzOB-R4Nuq91vLVvNhVDzZTDg=" alt="Work 6" class="w-full h-full object-cover rounded-lg shadow-lg transition-transform duration-300 ease-in-out group-hover:scale-105">
+    
+    <!-- Overlay for blur and 'See More' -->
+    <div class="absolute inset-0 bg-black bg-opacity-50 backdrop-blur-sm flex items-center justify-center">
+        <a href="all-works.html" class="text-lg font-semibold text-white bg-yellow-500 px-6 py-2 rounded-lg shadow-md hover:bg-yellow-600 transition duration-300">See More</a>
+    </div>
+</div>
+
+
+    </div>
+</section>
+
+<!-- Testimonials Section -->
+<section id="testimonials" class="py-20 bg-gray-800 text-white">
+    <h2 class="text-4xl font-bold text-center mb-12">What Our Customers Say</h2>
+    <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+        
+        <!-- Testimonial 1 -->
+        <div class="testimonial-card bg-gray-900 p-6 rounded-lg shadow-lg hover:bg-gray-700 transition duration-300">
+            <div class="flex items-center mb-4">
+                <img src="https://cdn.pixabay.com/photo/2015/01/27/09/58/man-613601_640.jpg" alt="Customer 1" class="w-12 h-12 rounded-full mr-4">
+                <div>
+                    <h3 class="font-semibold text-lg">John Doe</h3>
+                    <div class="text-yellow-400">
+                        <!-- Star Ratings -->
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+            </div>
+            <p class="text-lg">"The installation was quick and professional. I’m very pleased with the CCTV camera setup and the service!"</p>
+        </div>
+
+        <!-- Testimonial 2 -->
+        <div class="testimonial-card bg-gray-900 p-6 rounded-lg shadow-lg hover:bg-gray-700 transition duration-300">
+            <div class="flex items-center mb-4">
+                <img src="https://cdn.pixabay.com/photo/2019/07/13/02/25/man-4333898_640.jpg" alt="Customer 2" class="w-12 h-12 rounded-full mr-4">
+                <div>
+                    <h3 class="font-semibold text-lg">Jane Smith</h3>
+                    <div class="text-yellow-400">
+                        <!-- Star Ratings -->
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+            </div>
+            <p class="text-lg">"The solar panel installation was seamless, and it’s been saving me a lot on electricity bills. Highly recommend!"</p>
+        </div>
+
+        <!-- Testimonial 3 -->
+        <div class="testimonial-card bg-gray-900 p-6 rounded-lg shadow-lg hover:bg-gray-700 transition duration-300">
+            <div class="flex items-center mb-4">
+                <img src="https://cdn.pixabay.com/photo/2022/02/07/14/22/woman-6999505_640.jpg" alt="Customer 3" class="w-12 h-12 rounded-full mr-4">
+                <div>
+                    <h3 class="font-semibold text-lg">Samuel Lee</h3>
+                    <div class="text-yellow-400">
+                        <!-- Star Ratings -->
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+            </div>
+            <p class="text-lg">"Very professional and efficient installation service. The satellite dish works perfectly!"</p>
+        </div>
+
+    </div>
+</section>
+
+
+<!-- Pricing Plans Section -->
+<section id="pricing" class="py-20 bg-gray-900 text-white">
+    <h2 class="text-4xl font-bold text-center mb-12">Our Pricing Plans</h2>
+    <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+
+        <!-- Plan 1 -->
+        <div class="pricing-card bg-gray-800 p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+            <h3 class="text-2xl font-bold text-center text-yellow-500 mb-4">Basic Plan</h3>
+            <p class="text-center text-lg mb-4">Perfect for small homes or basic setups</p>
+            <p class="text-center text-4xl font-semibold mb-4">$99</p>
+            <ul class="mb-4">
+                <li class="mb-2">1 Satellite Dish Installation</li>
+                <li class="mb-2">Basic CCTV Setup (2 cameras)</li>
+                <li class="mb-2">No Solar Panel</li>
+                <li class="mb-2">Basic Warranty</li>
+            </ul>
+            <a href="#contact" class="block text-center px-6 py-3 bg-yellow-500 text-black font-semibold rounded-lg shadow-md hover:bg-yellow-600">Get Started</a>
+        </div>
+
+        <!-- Plan 2 -->
+        <div class="pricing-card bg-gray-800 p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+            <h3 class="text-2xl font-bold text-center text-yellow-500 mb-4">Standard Plan</h3>
+            <p class="text-center text-lg mb-4">Ideal for medium homes and businesses</p>
+            <p class="text-center text-4xl font-semibold mb-4">$199</p>
+            <ul class="mb-4">
+                <li class="mb-2">2 Satellite Dish Installations</li>
+                <li class="mb-2">Advanced CCTV Setup (4 cameras)</li>
+                <li class="mb-2">1 Solar Panel Installation</li>
+                <li class="mb-2">1-Year Warranty</li>
+            </ul>
+            <a href="#contact" class="block text-center px-6 py-3 bg-yellow-500 text-black font-semibold rounded-lg shadow-md hover:bg-yellow-600">Get Started</a>
+        </div>
+
+        <!-- Plan 3 -->
+        <div class="pricing-card bg-gray-800 p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+            <h3 class="text-2xl font-bold text-center text-yellow-500 mb-4">Premium Plan</h3>
+            <p class="text-center text-lg mb-4">For large homes, businesses, or full setups</p>
+            <p class="text-center text-4xl font-semibold mb-4">$399</p>
+            <ul class="mb-4">
+                <li class="mb-2">Unlimited Satellite Dish Installations</li>
+                <li class="mb-2">Full CCTV Setup (8 cameras)</li>
+                <li class="mb-2">Full Solar Panel Installation</li>
+                <li class="mb-2">2-Year Warranty & Premium Support</li>
+            </ul>
+            <a href="#contact" class="block text-center px-6 py-3 bg-yellow-500 text-black font-semibold rounded-lg shadow-md hover:bg-yellow-600">Get Started</a>
+        </div>
+
+    </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="py-20 bg-gray-900 text-white">
+    <h2 class="text-4xl font-bold text-center mb-12">Contact Us</h2>
+    <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-12">
+
+        <!-- Contact Form -->
+        <div class="bg-gray-800 p-6 rounded-lg shadow-lg">
+            <h3 class="text-2xl font-bold mb-6">Send Us a Message</h3>
+            <form action="#" method="POST">
+                <div class="mb-4">
+                    <label for="name" class="block text-lg mb-2">Full Name</label>
+                    <input type="text" id="name" name="name" class="w-full p-3 bg-gray-700 text-white rounded-lg focus:outline-none" required>
+                </div>
+                <div class="mb-4">
+                    <label for="email" class="block text-lg mb-2">Email Address</label>
+                    <input type="email" id="email" name="email" class="w-full p-3 bg-gray-700 text-white rounded-lg focus:outline-none" required>
+                </div>
+                <div class="mb-4">
+                    <label for="message" class="block text-lg mb-2">Your Message</label>
+                    <textarea id="message" name="message" rows="4" class="w-full p-3 bg-gray-700 text-white rounded-lg focus:outline-none" required></textarea>
+                </div>
+                <button type="submit" class="w-full px-6 py-3 bg-yellow-500 text-black font-semibold rounded-lg shadow-md hover:bg-yellow-600">Send Message</button>
+            </form>
+        </div>
+
+        <!-- Contact Details & Social Links -->
+        <div class="bg-gray-800 p-6 rounded-lg shadow-lg" id="message">
+            <h3 class="text-2xl font-bold mb-6">Get in Touch</h3>
+            <p class="mb-4 text-xl">You can reach us through any of the following channels:</p>
+            <ul>
+                <li class="flex items-center mb-4">
+                    <i class="fa-solid fa-phone text-yellow-500 text-2xl"></i>
+                    <span class="ml-3 text-xl">Phone: +234-81-2769-3437</span>
+                </li>
+                <li class="flex items-center mb-4">
+                    <i class="fa-solid fa-envelope text-yellow-400 text-2xl"></i>
+                    <span class="ml-3 text-xl">Email:  yusufabubakar2091@gmail.com</span>
+                </li>
+                <li class="flex items-center mb-4">
+                    <i class="fa-brands fa-square-whatsapp text-yellow-500 text-2xl"></i>
+                    <span class="ml-3 text-xl">WhatsApp: +234-70-3935-2091</span>
+                </li>
+            </ul>
+
+            <div class="mt-6">
+                <h4 class="text-xl font-bold mb-4">Follow Us:</h4>
+                <div class="flex gap-4">
+                    <a href="#" class="text-yellow-500 hover:text-yellow-600">
+                        <i class="fa-brands fa-square-whatsapp text-4xl"></i>
+                    </a>
+                    <a href="#" class="text-yellow-500 hover:text-yellow-600">
+                        <i class="fa-brands fa-github text-4xl"></i>
+                    </a>
+                    <a href="#" class="text-yellow-500 hover:text-yellow-600">
+                        <i class="fa-brands fa-facebook text-4xl"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Google Map -->
+    <div class="mt-12 p-2 border-rounded">
+        <h3 class="text-2xl font-bold text-center mb-6">Find Us</h3>
+        <div class="w-full h-96">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3902.597946144937!2d8.579747174288155!3d12.002297835389228!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x11ae83b567582657%3A0xf0b2115508f53f40!2sGidan%20Dallatu!5e0!3m2!1sen!2sng!4v1738599483979!5m2!1sen!2sng" width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        </div>
+    </div>
+</section>
+
+<!-- Footer Section -->
+<footer class="bg-gray-900 text-white py-16 px-6">
+    <div class="container mx-auto grid grid-cols-1 sm:grid-cols-1 sm:items-center md:grid-cols-2 gap-8">
+        
+        <!-- Follow Us & Social Media -->
+        <div>
+            <h1 class="text-3xl font-bold text-yellow-400 mb-4">Follow us for updates!</h1>
+            <h3 class="text-xl">On Any of These Platforms <br> Thanks for stopping by!</h3>
+            <div class="flex space-x-4 mt-2">
+                <a href="#" class="text-white bg-yellow-500 py-3 px-5 rounded-full hover:text-yellow-300 hover:translate-y-px">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="#" class="text-white bg-yellow-500 py-3 px-4 rounded-full hover:text-yellow-300 hover:translate-y-px">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="#" class="text-white bg-yellow-500 py-3 px-4 rounded-full hover:text-yellow-300 hover:translate-y-px">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="#" class="text-white bg-yellow-500 py-3 px-4 rounded-full hover:text-yellow-300 hover:translate-y-px">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+            </div>
+        </div>
+
+        <!-- Links & Address Section -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            
+            <!-- Quick Links -->
+            <div>
+                <h3 class="text-xl font-bold text-yellow-400 mb-4">Links</h3>
+                <ul class="space-y-2">
+                    <li><a href="#home" class="hover:text-yellow-400">Home</a></li>
+                    <li><a href="#about" class="hover:text-yellow-400">Products</a></li>
+                    <li><a href="#price" class="hover:text-yellow-400">Services</a></li>
+                    <li><a href="#contact" class="hover:text-yellow-400">Contact</a></li>
+                </ul>
+            </div>
+
+            <!-- Address & Contact Info -->
+            <div class="space-y-2">
+                <h3 class="text-xl font-bold text-yellow-400 mb-4">Address & State</h3>
+                <p class="text-gray-300">Badawa Layout</p>
+                <p class="text-gray-300">Kano, Nigeria</p>
+                <p class="text-gray-300">yusufabubakar2091@gmail.com</p>
+                <p class="text-gray-300">+234-81-2769-3437</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Copyright Section -->
+    <div class="text-center text-gray-500 mt-8 border-t border-gray-700 pt-4">
+        &copy; 2025 KwashaKwasha. All Rights Reserved.
+    </div>
+</footer>
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>

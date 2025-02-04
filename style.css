@@ -1,0 +1,222 @@
+.hero {
+    position: relative;
+    overflow: hidden;
+}
+.hero video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Scrollable Featured Products */
+.scroll-container {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    gap: 5px;
+    padding: 5px;
+    white-space: nowrap;
+    background: rgb(26, 24, 24); /* Light background */
+}
+
+.scroll-item {
+    flex: 0 0 auto;
+    width: 200px;
+    background: #4b5563; /* Gray-600 */
+    color: white;
+    border-radius: 10px;
+    text-align: center;
+    scroll-snap-align: start;
+    padding: 1.5rem;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.scroll-item img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+}
+
+.scroll-item h3 {
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+.scroll-item p {
+    font-size: 1rem;
+    font-weight: 700;
+    color: rgb(211, 152, 24); /* Yellow */
+}
+
+.scroll-item a {
+    display: inline-block;
+    margin-top: 0.5rem;
+    padding: 0.5rem 1.5rem;
+    background: rgb(211, 152, 24);
+    color: black;
+    font-weight: 600;
+    border-radius: 8px;
+    transition: background 0.3s;
+}
+
+.scroll-item a:hover {
+    background: #d69e2e;
+}
+
+
+/* Menu Styling */
+#menu {
+    
+    color: white;
+}
+
+#menu a:hover {
+    color: #d1f8ef; /* Hover effect */
+}
+/* Category Cards */
+.category-card img {
+    border-radius: 0.5rem; /* Rounded corners for images */
+}
+
+.category-card:hover {
+    transform: translateY(-10px);
+}
+
+.category-card a:hover {
+    transform: scale(1.05);
+}
+
+/* Service Cards */
+.service-card img {
+    border-radius: 0.5rem; /* Rounded corners for images */
+}
+
+.service-card:hover {
+    transform: translateY(-10px); /* Slight lift effect on hover */
+}
+
+.service-card a:hover {
+    transform: scale(1.05); /* Scale effect on the "Learn More" button */
+}
+
+/* Feature Cards */
+.feature-card i {
+    color: white; /* Icon color */
+}
+
+.feature-card:hover {
+    transform: translateY(-10px); /* Lift effect on hover */
+}
+
+/* Icon size adjustment */
+.feature-card i {
+    font-size: 3rem;
+}
+
+/* Testimonial Cards */
+.testimonial-card {
+    background: #1f2937; /* Darker background for cards */
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease-in-out;
+}
+
+.testimonial-card:hover {
+    transform: translateY(-10px); /* Hover lift effect */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Icon size adjustment */
+.testimonial-card i {
+    font-size: 1.5rem;
+}
+
+/* Customer Name */
+.testimonial-card h3 {
+    font-size: 1.125rem;
+    font-weight: 600;
+}
+
+/* Work Cards */
+.work-card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px;
+}
+
+.work-card img {
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Hover effect */
+.work-card:hover img {
+    transform: scale(1.05); /* Image zoom on hover */
+}
+
+/* Overlay for "View Details" */
+.work-card .absolute {
+    transition: opacity 0.3s ease-in-out;
+}
+
+.work-card .absolute a {
+    transition: color 0.3s ease-in-out;
+}
+
+.work-card:hover .absolute a {
+    color: #f59e0b; /* Hover color for the button */
+}
+
+/* Pricing Card Hover Effect */
+.pricing-card:hover {
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Shadow on hover */
+}
+
+/* Pricing Plan Button Hover Effect */
+.pricing-card a:hover {
+    background-color: #d1f8ef; /* Change button background on hover */
+    color: #1e3f9d; /* Change text color on hover */
+}
+
+/* Contact Form Input and Textarea Styles */
+input, textarea {
+    border: 2px solid #4A5568; /* Gray border */
+    border-radius: 8px;
+    background-color: #2D3748; /* Dark background */
+    color: #E2E8F0; /* Light text color */
+}
+
+/* Hover Effect for Social Media Links */
+.social-icon:hover {
+    color: #D1FAE5; /* Light hover color */
+}
+
+/* Footer Styling */
+footer {
+    background-color: #1a202c; /* Dark background */
+}
+
+footer a:hover {
+    color: #F6E05E; /* Hover color for links */
+}
+
+footer .space-y-2 a {
+    color: #E2E8F0; /* Light color for the links */
+}
+
+footer .space-y-2 a:hover {
+    color: #F6E05E; /* Hover effect for services and quick links */
+}
+
+footer svg {
+    transition: transform 0.3s;
+}
+
+footer svg:hover {
+    transform: scale(1.1); /* Hover effect on social icons */
+}
